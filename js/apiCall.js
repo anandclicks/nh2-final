@@ -4,10 +4,10 @@ queryForm.forEach(e=> {
   e.addEventListener("submit", async (evt) => {
     evt.preventDefault();
 
-    const name = document.querySelector("#name").value;
-    const mobileNumber = document.querySelector("#mobileNumber").value;
-    const propertyName = document.querySelector("#propertyName").value;
-    const roomSharing = document.querySelector("#roomSharing").value;
+    const name = e.querySelector("#name").value;
+    const mobileNumber = e.querySelector("#mobileNumber").value;
+    const propertyName = e.querySelector("#propertyName").value;
+    const roomSharing = e.querySelector("#roomSharing").value;
 
     let userInfo = {
         name,
